@@ -34,10 +34,8 @@
     </div>
 </div>
     <script>
-        function getRandom(max){
-        return Math.floor(Math.random() * max);
-        }
-        document.getElementById('mine').innerHTML = getRandom(5);
+        let num = Math.random() * (5 - 1) + 1;
+        document.getElementById("mine").innerHTML = num;
     </script>
 
 <br>
