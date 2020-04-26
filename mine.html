@@ -22,13 +22,14 @@
 <br>
 <br>
     
-    <h1>Концентрация метана <div id="mine"></div> %</h1>
+    <h1> <span class="badge badge-pill badge-success"> Концентрация метана <div id="mine">%</div></span></h1>
 
     <script>
-        function getRandom(max){
-        return Math.floor(Math.random() * max);
+        function getRandomArbitary(min, max)
+        {
+          return Math.random() * (max - min) + min;
         }
-        document.getElementById('mine').innerHTML = getRandom(4);
+        document.getElementById('mine').innerHTML = getRandom(1,4);
     </script>
 
 <br>
