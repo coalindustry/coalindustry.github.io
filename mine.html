@@ -24,11 +24,10 @@
 
 <div id="mine"></div>
     <script>
-        function getRandomArbitary(min, max)
-        {
-          return Math.random() * (max - min) + min;
+        function getRandom(max){
+        return Math.floor(Math.random() * max);
         }
-        document.getElementById('mine').innerHTML = getRandom(1,4);
+        document.getElementById('mine').innerHTML = getRandom(99);
     </script>
 
 <br>
